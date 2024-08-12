@@ -46,7 +46,7 @@ namespace P3.Logic.Messenger
                 {
                     var body = Context.LocalizationProvider.GetTranslation("MESSENGER.CLOUD_EMAIL.BODY");
                     body = body.Replace("{{NAME}}", Context.RuleInstance.Name).Replace("{{VALUE}}", value.ToString())
-                        .Replace("{{SOURCE}}", source.Name);
+                        .Replace("{{SOURCE}}", source.Name).Replace("{{TIMESTAMP}}", DateTime.Now.ToString("F"));
 
                     Context.Logger.LogInformation($"Send email to {String.Join(";", _to)}");
                     Context.CloudApi.SendEmail(_to, _subject, body);

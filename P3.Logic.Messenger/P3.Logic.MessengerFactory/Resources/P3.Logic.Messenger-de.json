@@ -13,7 +13,7 @@
         "NAME": "Betreff",
         "DESCRIPTION": "Wenn das Feld leer ist, wird 'Automatica.Core Message' eingesetzt."
       },
-      "BODY": "{{NAME}} hat den Zustand {{VALUE}} erreicht. Dieser wurde von {{SOURCE}} gemeldet."
+      "BODY": "{{NAME}} hat den Zustand {{VALUE}} erreicht. Dieser wurde von {{SOURCE}} ({{TIMESTAMP}}) gemeldet."
     } 
   }
 }
